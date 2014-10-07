@@ -1,7 +1,7 @@
 ---
 galaxy_info:
-  author: Mark Janssen
-  description: New Relic PHP agent
+  author: Chris Kite
+  description: New Relic PHP5/Nginx Agent
   # Some suggested licenses:
   # - BSD (default)
   # - MIT
