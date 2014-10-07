@@ -4,7 +4,7 @@ Sets up New Relic PHP agent: https://docs.newrelic.com/docs/php/new-relic-for-ph
 
 ## Requirements
 
-Debian Wheezy, with PHP installed. This role tries to restart PHP-FPM and/or the Apache web server.
+Debian Wheezy, with PHP installed. This role tries to restart PHP-FPM and Nginx.
 
 ## Role Variables
 
@@ -27,7 +27,7 @@ Requires the New Relic repository to be set up; depends on [sivel.newrelic](http
     ---
     - hosts: all
       roles:
-        - { role: praseodym.newrelic, newrelic_license_key: ab2fa361cd4d0d373833cad619d7bcc424d27c16, newrelic_appname: myapp-host1;myapp }
+        - { role: chriskite.newrelic, newrelic_license_key: ab2fa361cd4d0d373833cad619d7bcc424d27c16, newrelic_appname: myapp-host1;myapp }
 
 ### Vars
 
@@ -37,7 +37,7 @@ Requires the New Relic repository to be set up; depends on [sivel.newrelic](http
         newrelic_license_key: ab2fa361cd4d0d373833cad619d7bcc424d27c16
         newrelic_appname: myapp-host1;myapp
       roles:
-        - praseodym.newrelic-php
+        - chriskite.newrelic-php
 
 ### Group vars
 
@@ -52,4 +52,4 @@ Requires the New Relic repository to be set up; depends on [sivel.newrelic](http
     ---
     - hosts: all
       roles:
-        - praseodym.newrelic-php
+        - chriskite.newrelic-php
